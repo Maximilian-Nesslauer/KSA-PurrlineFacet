@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetCellsA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <SubPart Id="FacetCellsA_Subpart_WingSegment" Modify="Patch">
+    <Components Modify="Extend">
+      <SolarPanel Key="WingCell">
+        <Produced W="22" />
+        <Transform>
+          <Rotation Y="-1.5708" />
+        </Transform>
+      </SolarPanel>
+    </Components>
+  </SubPart>
+</Assets>

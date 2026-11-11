@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetBusA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+
+  <Part Id="FacetBusA_Prefab_BusA" Modify="Patch" DisplayName="Facet Bus">
+    <InertMasses Modify="Extend">
+      <HollowCuboidMass>
+        <Material Ref="Aluminum.2014" Phase="Solid" />
+        <LengthX M="0.51" />
+        <LengthY M="0.4" />
+        <LengthZ M="0.4" />
+        <WallThickness Mm="17.02" />
+      </HollowCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Capsules" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Control />
+      <Battery HasStatusLight="true">
+        <MaximumCapacity J="1440000" />
+      </Battery>
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="25" />
+      </PowerConsumer>
+    </Components>
+  </Part>
+
+  <Part Id="FacetBusA_Prefab_BatteryA" Modify="Patch" DisplayName="Facet Battery Pack">
+    <InertMasses Modify="Extend">
+      <HollowCuboidMass>
+        <Material Ref="Aluminum.2014" Phase="Solid" />
+        <LengthX M="0.3" />
+        <LengthY M="0.4" />
+        <LengthZ M="0.4" />
+        <WallThickness Mm="14.52" />
+      </HollowCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Battery HasStatusLight="true">
+        <MaximumCapacity J="3600000" />
+      </Battery>
+    </Components>
+  </Part>
+
+  <Part Id="FacetBusA_Prefab_RcsPodA" Modify="Patch" DisplayName="Facet RCS Pod">
+    <InertMasses Modify="Extend">
+      <SolidSphereMass>
+        <Mass Kg="7.389" />
+        <LocationAsmb Z="-0.1083" />
+        <Radius M="0.0833" />
+      </SolidSphereMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="RCS" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <SubPart Id="FacetBusA_Subpart_RcsPod" Modify="Patch">
+    <Components Modify="Extend">
+      <Tank Key="RcsTank">
+        <SphericalTank>
+          <LocationAsmb Z="-0.1083" />
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <OuterRadius M="0.1323" />
+          <WallThickness Mm="1" />
+          <RoleAffinity>Thruster</RoleAffinity>
+        </SphericalTank>
+      </Tank>
+    </Components>
+    <RocketThrusterControllers Modify="Extend">
+      <RocketThrusterController Key="PodXPlus">
+        <Rockets>
+          <Rocket KeyRef="PodXPlusRocket" />
+        </Rockets>
+      </RocketThrusterController>
+      <RocketThrusterController Key="PodXMinus">
+        <Rockets>
+          <Rocket KeyRef="PodXMinusRocket" />
+        </Rockets>
+      </RocketThrusterController>
+      <RocketThrusterController Key="PodYPlus">
+        <Rockets>
+          <Rocket KeyRef="PodYPlusRocket" />
+        </Rockets>
+      </RocketThrusterController>
+      <RocketThrusterController Key="PodYMinus">
+        <Rockets>
+          <Rocket KeyRef="PodYMinusRocket" />
+        </Rockets>
+      </RocketThrusterController>
+    </RocketThrusterControllers>
+    <Rockets Modify="Extend">
+      <Rocket Key="PodXPlusRocket">
+        <Core KeyRef="PodXPlusChamber" />
+        <Nozzles>
+          <Nozzle KeyRef="PodXPlusNozzle" />
+        </Nozzles>
+      </Rocket>
+      <Rocket Key="PodXMinusRocket">
+        <Core KeyRef="PodXMinusChamber" />
+        <Nozzles>
+          <Nozzle KeyRef="PodXMinusNozzle" />
+        </Nozzles>
+      </Rocket>
+      <Rocket Key="PodYPlusRocket">
+        <Core KeyRef="PodYPlusChamber" />
+        <Nozzles>
+          <Nozzle KeyRef="PodYPlusNozzle" />
+        </Nozzles>
+      </Rocket>
+      <Rocket Key="PodYMinusRocket">
+        <Core KeyRef="PodYMinusChamber" />
+        <Nozzles>
+          <Nozzle KeyRef="PodYMinusNozzle" />
+        </Nozzles>
+      </Rocket>
+    </Rockets>
+    <RocketCores Modify="Extend">
+      <Combustor Key="PodXPlusChamber">
+        <FeedsFroms>
+          <FeedsFrom>
+            <Container KeyRef="RcsTank" />
+          </FeedsFrom>
+        </FeedsFroms>
+        <Plumbing>Service</Plumbing>
+        <Reaction Ref="MMH_NTO">
+          <MixtureRatio>1.6</MixtureRatio>
+        </Reaction>
+        <MaxPressure Bar="7" />
+        <ThermalEfficiency Value="0.95" />
+        <MinimumPulseTime Seconds="0.0054489795" />
+      </Combustor>
+      <Combustor Key="PodXMinusChamber">
+        <FeedsFroms>
+          <FeedsFrom>
+            <Container KeyRef="RcsTank" />
+          </FeedsFrom>
+        </FeedsFroms>
+        <Plumbing>Service</Plumbing>
+        <Reaction Ref="MMH_NTO">
+          <MixtureRatio>1.6</MixtureRatio>
+        </Reaction>
+        <MaxPressure Bar="7" />
+        <ThermalEfficiency Value="0.95" />
+        <MinimumPulseTime Seconds="0.0054489795" />
+      </Combustor>
+      <Combustor Key="PodYPlusChamber">
+        <FeedsFroms>
+          <FeedsFrom>
+            <Container KeyRef="RcsTank" />
+          </FeedsFrom>
+        </FeedsFroms>
+        <Plumbing>Service</Plumbing>
+        <Reaction Ref="MMH_NTO">
+          <MixtureRatio>1.6</MixtureRatio>
+        </Reaction>
+        <MaxPressure Bar="7" />
+        <ThermalEfficiency Value="0.95" />
+        <MinimumPulseTime Seconds="0.0054489795" />
+      </Combustor>
+      <Combustor Key="PodYMinusChamber">
+        <FeedsFroms>
+          <FeedsFrom>
+            <Container KeyRef="RcsTank" />
+          </FeedsFrom>
+        </FeedsFroms>
+        <Plumbing>Service</Plumbing>
+        <Reaction Ref="MMH_NTO">
+          <MixtureRatio>1.6</MixtureRatio>
+        </Reaction>
+        <MaxPressure Bar="7" />
+        <ThermalEfficiency Value="0.95" />
+        <MinimumPulseTime Seconds="0.0054489795" />
+      </Combustor>
+    </RocketCores>
+    <RocketNozzles Modify="Extend">
+      <DeLavalNozzle Key="PodXPlusNozzle">
+        <ExitDiameter M="0.03" />
+        <FxExitDiameter M="0.03" />
+        <AreaRatio Value="40" />
+        <FlowEfficiency Value="1" />
+        <ExpansionEfficiency Value="0.7" />
+        <ExhaustLocation X="0.1183" Y="0" Z="-0.1083" />
+        <ExhaustDirection X="0.98481" Y="0" Z="-0.17365" />
+        <ReactionPlumes>
+          <ReactionPlume Default="true">
+            <VolumetricExhaust Ref="RCS" />
+          </ReactionPlume>
+        </ReactionPlumes>
+        <SoundEvent Ref="DefaultRcsThruster" Action="On" />
+      </DeLavalNozzle>
+      <DeLavalNozzle Key="PodXMinusNozzle">
+        <ExitDiameter M="0.03" />
+        <FxExitDiameter M="0.03" />
+        <AreaRatio Value="40" />
+        <FlowEfficiency Value="1" />
+        <ExpansionEfficiency Value="0.7" />
+        <ExhaustLocation X="-0.1183" Y="0" Z="-0.1083" />
+        <ExhaustDirection X="-0.98481" Y="0" Z="-0.17365" />
+        <ReactionPlumes>
+          <ReactionPlume Default="true">
+            <VolumetricExhaust Ref="RCS" />
+          </ReactionPlume>
+        </ReactionPlumes>
+        <SoundEvent Ref="DefaultRcsThruster" Action="On" />
+      </DeLavalNozzle>
+      <DeLavalNozzle Key="PodYPlusNozzle">
+        <ExitDiameter M="0.03" />
+        <FxExitDiameter M="0.03" />
+        <AreaRatio Value="40" />
+        <FlowEfficiency Value="1" />
+        <ExpansionEfficiency Value="0.7" />
+        <ExhaustLocation X="0" Y="0.1183" Z="-0.1083" />
+        <ExhaustDirection X="0" Y="0.98481" Z="-0.17365" />
+        <ReactionPlumes>
+          <ReactionPlume Default="true">
+            <VolumetricExhaust Ref="RCS" />
+          </ReactionPlume>
+        </ReactionPlumes>
+        <SoundEvent Ref="DefaultRcsThruster" Action="On" />
+      </DeLavalNozzle>
+      <DeLavalNozzle Key="PodYMinusNozzle">
+        <ExitDiameter M="0.03" />
+        <FxExitDiameter M="0.03" />
+        <AreaRatio Value="40" />
+        <FlowEfficiency Value="1" />
+        <ExpansionEfficiency Value="0.7" />
+        <ExhaustLocation X="0" Y="-0.1183" Z="-0.1083" />
+        <ExhaustDirection X="0" Y="-0.98481" Z="-0.17365" />
+        <ReactionPlumes>
+          <ReactionPlume Default="true">
+            <VolumetricExhaust Ref="RCS" />
+          </ReactionPlume>
+        </ReactionPlumes>
+        <SoundEvent Ref="DefaultRcsThruster" Action="On" />
+      </DeLavalNozzle>
+    </RocketNozzles>
+  </SubPart>
+</Assets>

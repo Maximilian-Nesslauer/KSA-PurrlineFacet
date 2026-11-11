@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetRackA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <Part Id="FacetRackA_Prefab_AdapterA" Modify="Patch" DisplayName="Facet Cube Adapter 1 m to 0.5 m">
+    <InertMasses Modify="Extend">
+      <HollowOpenTruncatedConeMass>
+        <Material Ref="Aluminum.2014" Phase="Solid" />
+        <Height M="0.22" />
+        <RadiusBase M="0.5" />
+        <RadiusTop M="0.25" />
+        <WallThickness Mm="7" />
+      </HollowOpenTruncatedConeMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="1" />
+      <Diameter M="0.5" />
+    </Diameters>
+  </Part>
+
+  <Part Id="FacetRackA_Prefab_RackA" Modify="Patch" DisplayName="Facet Cube Rack">
+    <InertMasses Modify="Extend">
+      <HollowCuboidMass>
+        <Material Ref="Aluminum.2014" Phase="Solid" />
+        <LengthX M="0.35" />
+        <LengthY M="0.35" />
+        <LengthZ M="0.35" />
+        <WallThickness Mm="9" />
+      </HollowCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector4PlusY6UUp" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector5PlusY6UDown" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector6PlusY3UA" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector7PlusY3UB" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector8PlusY3UC" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector9PlusY3UD" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector11PlusZ6UUp" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector12PlusZ6UDown" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector13PlusZ3UA" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector14PlusZ3UB" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector15PlusZ3UC" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector16PlusZ3UD" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector18MinusY6UUp" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector19MinusY6UDown" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector20MinusY3UA" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector21MinusY3UB" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector22MinusY3UC" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector23MinusY3UD" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector25MinusZ6UUp" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector26MinusZ6UDown" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector27MinusZ3UA" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector28MinusZ3UB" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector29MinusZ3UC" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+      <Connector Key="_connector30MinusZ3UD" Modify="Patch">
+        <Flags>Internal</Flags>
+      </Connector>
+    </Connectors>
+    <AlignedGroups Modify="Extend">
+      <Aligned>
+        <Connectors>
+          <Connector KeyRef="_connector3PlusY12U" />
+          <Connector KeyRef="_connector4PlusY6UUp" />
+          <Connector KeyRef="_connector5PlusY6UDown" />
+          <Connector KeyRef="_connector6PlusY3UA" />
+          <Connector KeyRef="_connector7PlusY3UB" />
+          <Connector KeyRef="_connector8PlusY3UC" />
+          <Connector KeyRef="_connector9PlusY3UD" />
+        </Connectors>
+      </Aligned>
+      <Aligned>
+        <Connectors>
+          <Connector KeyRef="_connector10PlusZ12U" />
+          <Connector KeyRef="_connector11PlusZ6UUp" />
+          <Connector KeyRef="_connector12PlusZ6UDown" />
+          <Connector KeyRef="_connector13PlusZ3UA" />
+          <Connector KeyRef="_connector14PlusZ3UB" />
+          <Connector KeyRef="_connector15PlusZ3UC" />
+          <Connector KeyRef="_connector16PlusZ3UD" />
+        </Connectors>
+      </Aligned>
+      <Aligned>
+        <Connectors>
+          <Connector KeyRef="_connector17MinusY12U" />
+          <Connector KeyRef="_connector18MinusY6UUp" />
+          <Connector KeyRef="_connector19MinusY6UDown" />
+          <Connector KeyRef="_connector20MinusY3UA" />
+          <Connector KeyRef="_connector21MinusY3UB" />
+          <Connector KeyRef="_connector22MinusY3UC" />
+          <Connector KeyRef="_connector23MinusY3UD" />
+        </Connectors>
+      </Aligned>
+      <Aligned>
+        <Connectors>
+          <Connector KeyRef="_connector24MinusZ12U" />
+          <Connector KeyRef="_connector25MinusZ6UUp" />
+          <Connector KeyRef="_connector26MinusZ6UDown" />
+          <Connector KeyRef="_connector27MinusZ3UA" />
+          <Connector KeyRef="_connector28MinusZ3UB" />
+          <Connector KeyRef="_connector29MinusZ3UC" />
+          <Connector KeyRef="_connector30MinusZ3UD" />
+        </Connectors>
+      </Aligned>
+    </AlignedGroups>
+  </Part>
+</Assets>

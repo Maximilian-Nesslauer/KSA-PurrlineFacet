@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetCubeA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <KeyframeAnimation Id="FacetCubeA_Prefab_Cube12UA_Anim" Path="Animations/FacetCubeA_Prefab_Cube12UA_Anim.glb" />
+
+  <Part Id="FacetCubeA_Prefab_Cube3UA" Modify="Patch" DisplayName="Facet Cube 3U">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="4" />
+        <LengthX M="0.3405" />
+        <LengthY M="0.1" />
+        <LengthZ M="0.1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.25" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Control />
+      <Battery HasStatusLight="true">
+        <MaximumCapacity J="144000" />
+      </Battery>
+      <SolarPanel Key="PanelPlusY">
+        <Produced W="10" />
+        <Transform>
+          <Rotation Z="1.5708" />
+        </Transform>
+      </SolarPanel>
+      <SolarPanel Key="PanelMinusY">
+        <Produced W="10" />
+        <Transform>
+          <Rotation Z="-1.5708" />
+        </Transform>
+      </SolarPanel>
+      <SolarPanel Key="PanelPlusZ">
+        <Produced W="10" />
+        <Transform>
+          <Rotation Y="-1.5708" />
+        </Transform>
+      </SolarPanel>
+      <SolarPanel Key="PanelMinusZ">
+        <Produced W="10" />
+        <Transform>
+          <Rotation Y="1.5708" />
+        </Transform>
+      </SolarPanel>
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="1.5" />
+      </PowerConsumer>
+      <Decoupler Force="5">
+        <Connector KeyRef="_connector1Bottom" />
+      </Decoupler>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Bottom" Modify="Patch">
+        <Capabilities>DecouplerJoint NoElectricity NoServiceFluid</Capabilities>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetCubeA_Prefab_Cube6UA" Modify="Patch" DisplayName="Facet Cube 6U">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="10" />
+        <LengthX M="0.3405" />
+        <LengthY M="0.2" />
+        <LengthZ M="0.1" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.25" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Control />
+      <Battery HasStatusLight="true">
+        <MaximumCapacity J="288000" />
+      </Battery>
+      <SolarPanel Key="PanelPlusY">
+        <Produced W="10" />
+        <Transform>
+          <Rotation Z="1.5708" />
+        </Transform>
+      </SolarPanel>
+      <SolarPanel Key="PanelMinusY">
+        <Produced W="10" />
+        <Transform>
+          <Rotation Z="-1.5708" />
+        </Transform>
+      </SolarPanel>
+      <SolarPanel Key="PanelPlusZ">
+        <Produced W="20" />
+        <Transform>
+          <Rotation Y="-1.5708" />
+        </Transform>
+      </SolarPanel>
+      <SolarPanel Key="PanelMinusZ">
+        <Produced W="20" />
+        <Transform>
+          <Rotation Y="1.5708" />
+        </Transform>
+      </SolarPanel>
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="3" />
+      </PowerConsumer>
+      <Decoupler Force="12">
+        <Connector KeyRef="_connector1Bottom" />
+      </Decoupler>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Bottom" Modify="Patch">
+        <Capabilities>DecouplerJoint NoElectricity NoServiceFluid</Capabilities>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetCubeA_Prefab_Cube12UA" Modify="Patch" DisplayName="Facet Cube 12U">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="20" />
+        <LengthX M="0.3405" />
+        <LengthY M="0.2" />
+        <LengthZ M="0.2" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Control />
+      <Battery HasStatusLight="true">
+        <MaximumCapacity J="576000" />
+      </Battery>
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="6" />
+      </PowerConsumer>
+      <Decoupler Force="24">
+        <Connector KeyRef="_connector1Bottom" />
+      </Decoupler>
+      <KeyframeAnimationModule Key="WingAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetCubeA_Prefab_Cube12UA_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Bottom" Modify="Patch">
+        <Capabilities>DecouplerJoint NoElectricity NoServiceFluid</Capabilities>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>

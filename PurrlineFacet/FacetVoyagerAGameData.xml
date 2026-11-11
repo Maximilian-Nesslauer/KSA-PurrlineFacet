@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetVoyagerA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <KeyframeAnimation Id="FacetVoyagerA_Prefab_DishA_Anim" Path="Animations/FacetVoyagerA_Prefab_DishA_Anim.glb" />
+
+  <KeyframeAnimation Id="FacetVoyagerA_Prefab_BoomA_Anim" Path="Animations/FacetVoyagerA_Prefab_BoomA_Anim.glb" />
+
+  <Part Id="FacetVoyagerA_Prefab_TankA" Modify="Patch" DisplayName="Facet Voyager Tank">
+    <InertMasses Modify="Extend">
+      <HollowOpenCylinderMass>
+        <Material Ref="Aluminum.2014" Phase="Solid" />
+        <Length M="0.72" />
+        <OuterRadius M="0.2475" />
+        <WallThickness Mm="3.86" />
+      </HollowOpenCylinderMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Fuel Tanks" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <Tank Key="MainTank">
+        <CylindricalTank>
+          <Material Ref="Aluminum.2014" Phase="Solid" />
+          <Length M="1.034" />
+          <OuterRadius M="0.3651" />
+          <WallThickness Mm="2.25" />
+        </CylindricalTank>
+      </Tank>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Bottom" Modify="Patch">
+        <Capabilities>BulkFluid</Capabilities>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetVoyagerA_Prefab_DishA" Modify="Patch" DisplayName="Facet Dish">
+    <InertMasses Modify="Extend">
+      <SolidCylinderMass>
+        <Mass Kg="9" />
+        <LocationAsmb X="0.03" />
+        <Length M="0.35" />
+        <Radius M="0.3" />
+      </SolidCylinderMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="DishAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetVoyagerA_Prefab_DishA_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+  </Part>
+
+  <Part Id="FacetVoyagerA_Prefab_BoomA" Modify="Patch" DisplayName="Facet Science Boom">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="3" />
+        <LocationAsmb Z="-0.09" />
+        <LengthX M="0.4" />
+        <LengthY M="0.08" />
+        <LengthZ M="0.08" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="BoomAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetVoyagerA_Prefab_BoomA_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>

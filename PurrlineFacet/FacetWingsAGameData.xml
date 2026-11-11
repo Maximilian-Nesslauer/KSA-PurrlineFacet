@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetWingsA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <KeyframeAnimation Id="FacetWingsA_Prefab_Wing2A_Anim" Path="Animations/FacetWingsA_Prefab_Wing2A_Anim.glb" />
+
+  <KeyframeAnimation Id="FacetWingsA_Prefab_Wing3A_Anim" Path="Animations/FacetWingsA_Prefab_Wing3A_Anim.glb" />
+
+  <Part Id="FacetWingsA_Prefab_Wing2A" Modify="Patch" DisplayName="Facet Wing 2">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="7" />
+        <LocationAsmb Z="-0.0235" />
+        <LengthX M="0.43" />
+        <LengthY M="0.38" />
+        <LengthZ M="0.047" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="WingAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetWingsA_Prefab_Wing2A_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetWingsA_Prefab_Wing3A" Modify="Patch" DisplayName="Facet Wing 3">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="10" />
+        <LocationAsmb Z="-0.034" />
+        <LengthX M="0.43" />
+        <LengthY M="0.38" />
+        <LengthZ M="0.068" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="WingAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetWingsA_Prefab_Wing3A_Anim" />
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <SubPart Id="FacetWingsA_Subpart_SegmentA" Modify="Patch">
+    <Components Modify="Extend">
+      <SolarPanel Key="WingCell">
+        <Produced W="69" />
+        <Transform>
+          <Rotation Y="-1.5708" />
+        </Transform>
+      </SolarPanel>
+    </Components>
+  </SubPart>
+
+  <SubPart Id="FacetWingsA_Subpart_SegmentB" Modify="Patch">
+    <Components Modify="Extend">
+      <SolarPanel Key="WingCell">
+        <Produced W="69" />
+        <Transform>
+          <Rotation Y="-1.5708" />
+        </Transform>
+      </SolarPanel>
+    </Components>
+  </SubPart>
+</Assets>

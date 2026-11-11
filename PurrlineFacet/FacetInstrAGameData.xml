@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetInstrA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <Part Id="FacetInstrA_Prefab_ImagerA" Modify="Patch" DisplayName="Facet Eye Imager">
+    <InertMasses Modify="Extend">
+      <SolidCylinderMass>
+        <Mass Kg="28" />
+        <Length M="0.8" />
+        <Radius M="0.17" />
+      </SolidCylinderMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+      <EditorTag Ref="Structural" />
+    </EditorTags>
+    <Diameters Modify="Extend">
+      <Diameter M="0.5" />
+    </Diameters>
+    <Components Modify="Extend">
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="60" />
+      </PowerConsumer>
+    </Components>
+  </Part>
+
+  <Part Id="FacetInstrA_Prefab_HornA" Modify="Patch" DisplayName="Facet Horn Antenna">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="2.5" />
+        <LocationAsmb Z="-0.135" />
+        <LengthX M="0.12" />
+        <LengthY M="0.12" />
+        <LengthZ M="0.27" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetInstrA_Prefab_PatchA" Modify="Patch" DisplayName="Facet Patch Antenna">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="0.8" />
+        <LocationAsmb Z="-0.01" />
+        <LengthX M="0.12" />
+        <LengthY M="0.12" />
+        <LengthZ M="0.02" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetInstrA_Prefab_StarTrackerA" Modify="Patch" DisplayName="Facet Star Tracker">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="2" />
+        <LocationAsmb Z="-0.1" />
+        <LengthX M="0.12" />
+        <LengthY M="0.12" />
+        <LengthZ M="0.2" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetInstrA_Prefab_CameraPodA" Modify="Patch" DisplayName="Facet Camera Pod">
+    <InertMasses Modify="Extend">
+      <SolidCuboidMass>
+        <Mass Kg="6" />
+        <LocationAsmb Z="-0.125" />
+        <LengthX M="0.15" />
+        <LengthY M="0.15" />
+        <LengthZ M="0.25" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Cargo" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <PowerConsumer LightSwitch="true" LightIsActive="true">
+        <Consumed W="15" />
+      </PowerConsumer>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>
