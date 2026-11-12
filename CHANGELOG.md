@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+New gold foil and silver tank blanket, validated against KSA build version 2026.11.10.5801. The foil was a dark sheet with one highlight. It now lies over rails, ribs and straps as a real blanket does, so it has many folds that catch the sun and reads as foil from every side. Part Ids, shapes of the bare parts, masses and saved vehicles are the same as in 1.0.1.
+
 ## 1.0.1
 
 New materials for all hardware parts, validated against KSA build version 2026.11.10.5801. The parts were dark in orbit, because bare metal showed only one highlight. Bare aluminium is now a lighter satin metal, large black anodised faces are clear anodised or dark grey metal, and the dish, the patch antenna and the backs of the solar wings are white. The Bus, the Battery Pack, the Rack and the antennas have more surface relief. The solar cells of the wings and the cube satellites are glossy cover glass with a tone per cell. Only textures changed: part Ids, shapes, masses and saved vehicles are the same as in 1.0.0. The foil and cloth finishes are unchanged.

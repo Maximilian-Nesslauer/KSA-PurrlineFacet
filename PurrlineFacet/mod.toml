@@ -1,5 +1,5 @@
 name = "Facet by Purrline Rocketworks"
-version = "1.0.1"
+version = "1.0.2"
 description = "Satellite parts for small launchers, by the fictional Purrline Rocketworks: a payload rack with cube satellites, and a kit to build small satellites and probes from a bus, a battery pack, solar wings, RCS pods, antennas, instruments, a dish, a propellant tank and the Alcor kick engine. Many parts come bare, in gold foil or in white cloth."
 assets = [
     "FacetCellsAAssets.xml",
