@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+The foil and cloth variants of the Facet Bus, the Battery Pack and the Eye Imager now look like different parts, validated against KSA build version 2026.11.10.5801. Before, these variants changed only one small sheet on one face. Now a gold foil (B) or white beta cloth (C) blanket covers most of each side face of the Bus and the Battery Pack, with cut-outs for the radiator, the sensor window, the connectors and the wing fittings. Imager B has foil on its tube and on three faces of its mount. The blankets lie flat enough that wings and small parts still fit on the faces. Part Ids, shapes of the bare parts, colliders, masses and saved vehicles are the same as in 1.0.2. The Rack, the Adapter, the Voyager Tank and the cube satellites are unchanged.
+
 ## 1.0.2
 
 New gold foil and silver tank blanket, validated against KSA build version 2026.11.10.5801. The foil was a dark sheet with one highlight. It now lies over rails, ribs and straps as a real blanket does, so it has many folds that catch the sun and reads as foil from every side. Part Ids, shapes of the bare parts, masses and saved vehicles are the same as in 1.0.1.

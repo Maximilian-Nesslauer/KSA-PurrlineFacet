@@ -98,10 +98,27 @@
   <Part Id="FacetBusA_Prefab_BatteryB" Parent="FacetBusA_Prefab_BatteryA">
     <SubParts>
       <SubPart Key="FacetBusA_Subpart_BatteryBody1" Ref="FacetBusA_Subpart_BatteryBody" />
-      <SubPart Key="FacetFoilA_Subpart_FoilBatterySide1" Ref="FacetFoilA_Subpart_FoilBatterySide">
+      <SubPart Key="FacetBlanketFoilA_Subpart_BatterySideY1" Ref="FacetBlanketFoilA_Subpart_BatterySideY">
         <Transform>
           <Position Y="0.2" />
           <Rotation X="-1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_BatterySideY2" Ref="FacetBlanketFoilA_Subpart_BatterySideY">
+        <Transform>
+          <Position Y="-0.2" />
+          <Rotation X="1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_BatteryPlusZ1" Ref="FacetBlanketFoilA_Subpart_BatteryPlusZ">
+        <Transform>
+          <Position Z="0.2" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_BatteryMinusZ1" Ref="FacetBlanketFoilA_Subpart_BatteryMinusZ">
+        <Transform>
+          <Position Z="-0.2" />
+          <Rotation X="3.1416" />
         </Transform>
       </SubPart>
     </SubParts>
@@ -109,10 +126,27 @@
   <Part Id="FacetBusA_Prefab_BatteryC" Parent="FacetBusA_Prefab_BatteryA">
     <SubParts>
       <SubPart Key="FacetBusA_Subpart_BatteryBody1" Ref="FacetBusA_Subpart_BatteryBody" />
-      <SubPart Key="FacetClothA_Subpart_ClothBatterySide1" Ref="FacetClothA_Subpart_ClothBatterySide">
+      <SubPart Key="FacetBlanketClothA_Subpart_BatterySideY1" Ref="FacetBlanketClothA_Subpart_BatterySideY">
         <Transform>
           <Position Y="0.2" />
           <Rotation X="-1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketClothA_Subpart_BatterySideY2" Ref="FacetBlanketClothA_Subpart_BatterySideY">
+        <Transform>
+          <Position Y="-0.2" />
+          <Rotation X="1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketClothA_Subpart_BatteryPlusZ1" Ref="FacetBlanketClothA_Subpart_BatteryPlusZ">
+        <Transform>
+          <Position Z="0.2" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketClothA_Subpart_BatteryMinusZ1" Ref="FacetBlanketClothA_Subpart_BatteryMinusZ">
+        <Transform>
+          <Position Z="-0.2" />
+          <Rotation X="3.1416" />
         </Transform>
       </SubPart>
     </SubParts>
@@ -170,9 +204,27 @@
   <Part Id="FacetBusA_Prefab_BusB" Parent="FacetBusA_Prefab_BusA">
     <SubParts>
       <SubPart Key="FacetBusA_Subpart_BusBody1" Ref="FacetBusA_Subpart_BusBody" />
-      <SubPart Key="FacetFoilA_Subpart_FoilBusPatch1" Ref="FacetFoilA_Subpart_FoilBusPatch">
+      <SubPart Key="FacetBlanketFoilA_Subpart_BusPlusY1" Ref="FacetBlanketFoilA_Subpart_BusPlusY">
         <Transform>
-          <Position X="-0.0825" Y="0.1275" Z="0.2" />
+          <Position Y="0.2" />
+          <Rotation X="-1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_BusMinusY1" Ref="FacetBlanketFoilA_Subpart_BusMinusY">
+        <Transform>
+          <Position Y="-0.2" />
+          <Rotation X="1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_BusPlusZ1" Ref="FacetBlanketFoilA_Subpart_BusPlusZ">
+        <Transform>
+          <Position Z="0.2" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_BusMinusZ1" Ref="FacetBlanketFoilA_Subpart_BusMinusZ">
+        <Transform>
+          <Position Z="-0.2" />
+          <Rotation X="3.1416" />
         </Transform>
       </SubPart>
     </SubParts>
@@ -180,9 +232,27 @@
   <Part Id="FacetBusA_Prefab_BusC" Parent="FacetBusA_Prefab_BusA">
     <SubParts>
       <SubPart Key="FacetBusA_Subpart_BusBody1" Ref="FacetBusA_Subpart_BusBody" />
-      <SubPart Key="FacetClothA_Subpart_ClothBusPatch1" Ref="FacetClothA_Subpart_ClothBusPatch">
+      <SubPart Key="FacetBlanketClothA_Subpart_BusPlusY1" Ref="FacetBlanketClothA_Subpart_BusPlusY">
         <Transform>
-          <Position X="-0.0825" Y="0.1275" Z="0.2" />
+          <Position Y="0.2" />
+          <Rotation X="-1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketClothA_Subpart_BusMinusY1" Ref="FacetBlanketClothA_Subpart_BusMinusY">
+        <Transform>
+          <Position Y="-0.2" />
+          <Rotation X="1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketClothA_Subpart_BusPlusZ1" Ref="FacetBlanketClothA_Subpart_BusPlusZ">
+        <Transform>
+          <Position Z="0.2" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketClothA_Subpart_BusMinusZ1" Ref="FacetBlanketClothA_Subpart_BusMinusZ">
+        <Transform>
+          <Position Z="-0.2" />
+          <Rotation X="3.1416" />
         </Transform>
       </SubPart>
     </SubParts>

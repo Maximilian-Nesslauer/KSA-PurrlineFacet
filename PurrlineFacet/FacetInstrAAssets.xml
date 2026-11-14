@@ -155,12 +155,25 @@
   <Part Id="FacetInstrA_Prefab_ImagerB" Parent="FacetInstrA_Prefab_ImagerA">
     <SubParts>
       <SubPart Key="FacetInstrA_Subpart_ImagerBody1" Ref="FacetInstrA_Subpart_ImagerBody" />
-      <SubPart Key="FacetFoilA_Subpart_FoilImagerPatch1" Ref="FacetFoilA_Subpart_FoilImagerPatch">
+      <SubPart Key="FacetBlanketFoilA_Subpart_ImagerMount1" Ref="FacetBlanketFoilA_Subpart_ImagerMount">
         <Transform>
-          <Position X="-0.3" Y="0.18" />
+          <Position X="-0.295" Y="0.18" />
           <Rotation X="-1.5708" />
         </Transform>
       </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_ImagerMount2" Ref="FacetBlanketFoilA_Subpart_ImagerMount">
+        <Transform>
+          <Position X="-0.295" Y="-0.18" />
+          <Rotation X="1.5708" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_ImagerMount3" Ref="FacetBlanketFoilA_Subpart_ImagerMount">
+        <Transform>
+          <Position X="-0.295" Z="-0.18" />
+          <Rotation X="3.1416" />
+        </Transform>
+      </SubPart>
+      <SubPart Key="FacetBlanketFoilA_Subpart_ImagerBarrel1" Ref="FacetBlanketFoilA_Subpart_ImagerBarrel" />
     </SubParts>
   </Part>
   <Part Id="FacetInstrA_Prefab_PatchA">
