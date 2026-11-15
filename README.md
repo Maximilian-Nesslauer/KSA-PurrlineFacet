@@ -57,4 +57,4 @@ Code and game data: MIT ([LICENSE](LICENSE)). Meshes, textures, logo and picture
 
 ## Links
 
-[Forum thread](https://forums.ahwoo.com/threads/facet-by-purrline-rocketworks.ID/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-PurrlineFacet/issues)
+[Forum thread](https://forums.ahwoo.com/forums/kitten-space-agency/mod-releases/facet-by-purrline-rocketworks.1634/) | [Issues](https://github.com/Maximilian-Nesslauer/KSA-PurrlineFacet/issues)
