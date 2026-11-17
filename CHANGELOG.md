@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.5
+
+Works with KSA build version 2026.11.16.5901 and needs it. KSA 2026.11.16.5901 moved the minimum throttle and the minimum pulse time of an engine from the combustion chamber to the rocket, so with Facet 1.0.4 the Alcor Kick Engine and the Facet RCS Pod did not load. These values are now in the new place and are the same as before. The game also corrected the density of MMH: the Facet Voyager Tank now holds about 414 kg instead of 300 kg and each RCS Pod about 11 kg instead of 8 kg, so Facet Voyager has about 3,500 m/s instead of about 2,900 m/s. Part Ids, shapes, colliders, masses and saved vehicles are the same as in 1.0.4. This version does not load on older KSA builds; use 1.0.4 there.
+
 ## 1.0.4
 
 Fixes flickering faces on some parts, validated against KSA build version 2026.11.10.5801. The mounting faces of the Camera Pod, the Horn Antenna, the Patch Antenna, the Star Tracker and the root plate of Wing 2 and Wing 3 had no texture area, so the game could not shade them and they showed changing noise when a part was turned on its mount point. These faces now have their own small texture area with the plain back of the plate. Two corner faces and the radiator plate of the Eye Imager and the narrow rings in the bolt seats of the Cube Adapter had texture coordinates on a line; they now have a real texture area too. Only the meshes and the textures of these faces changed: part Ids, shapes, colliders, masses and saved vehicles are the same as in 1.0.3.

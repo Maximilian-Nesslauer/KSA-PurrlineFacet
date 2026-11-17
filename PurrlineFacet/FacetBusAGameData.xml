@@ -113,24 +113,28 @@
         <Nozzles>
           <Nozzle KeyRef="PodXPlusNozzle" />
         </Nozzles>
+        <MinimumPulseTime Seconds="0.0054489795" />
       </Rocket>
       <Rocket Key="PodXMinusRocket">
         <Core KeyRef="PodXMinusChamber" />
         <Nozzles>
           <Nozzle KeyRef="PodXMinusNozzle" />
         </Nozzles>
+        <MinimumPulseTime Seconds="0.0054489795" />
       </Rocket>
       <Rocket Key="PodYPlusRocket">
         <Core KeyRef="PodYPlusChamber" />
         <Nozzles>
           <Nozzle KeyRef="PodYPlusNozzle" />
         </Nozzles>
+        <MinimumPulseTime Seconds="0.0054489795" />
       </Rocket>
       <Rocket Key="PodYMinusRocket">
         <Core KeyRef="PodYMinusChamber" />
         <Nozzles>
           <Nozzle KeyRef="PodYMinusNozzle" />
         </Nozzles>
+        <MinimumPulseTime Seconds="0.0054489795" />
       </Rocket>
     </Rockets>
     <RocketCores Modify="Extend">
@@ -146,7 +150,6 @@
         </Reaction>
         <MaxPressure Bar="7" />
         <ThermalEfficiency Value="0.95" />
-        <MinimumPulseTime Seconds="0.0054489795" />
       </Combustor>
       <Combustor Key="PodXMinusChamber">
         <FeedsFroms>
@@ -160,7 +163,6 @@
         </Reaction>
         <MaxPressure Bar="7" />
         <ThermalEfficiency Value="0.95" />
-        <MinimumPulseTime Seconds="0.0054489795" />
       </Combustor>
       <Combustor Key="PodYPlusChamber">
         <FeedsFroms>
@@ -174,7 +176,6 @@
         </Reaction>
         <MaxPressure Bar="7" />
         <ThermalEfficiency Value="0.95" />
-        <MinimumPulseTime Seconds="0.0054489795" />
       </Combustor>
       <Combustor Key="PodYMinusChamber">
         <FeedsFroms>
@@ -188,7 +189,6 @@
         </Reaction>
         <MaxPressure Bar="7" />
         <ThermalEfficiency Value="0.95" />
-        <MinimumPulseTime Seconds="0.0054489795" />
       </Combustor>
     </RocketCores>
     <RocketNozzles Modify="Extend">
