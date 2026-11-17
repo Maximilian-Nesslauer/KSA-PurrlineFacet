@@ -19,7 +19,7 @@
       <Diameter M="0.5" />
     </Diameters>
     <Components Modify="Extend">
-      <PowerConsumer LightSwitch="true" LightIsActive="true">
+      <PowerConsumer PowerSwitch="true">
         <Consumed W="60" />
       </PowerConsumer>
     </Components>
@@ -46,6 +46,7 @@
   </Part>
 
   <Part Id="FacetInstrA_Prefab_PatchA" Modify="Patch" DisplayName="Facet Patch Antenna">
+    <ThumbnailRotation X="1.5708" />
     <InertMasses Modify="Extend">
       <SolidCuboidMass>
         <Mass Kg="0.8" />
@@ -99,7 +100,7 @@
       <EditorTag Ref="Cargo" />
     </EditorTags>
     <Components Modify="Extend">
-      <PowerConsumer LightSwitch="true" LightIsActive="true">
+      <PowerConsumer PowerSwitch="true">
         <Consumed W="15" />
       </PowerConsumer>
     </Components>

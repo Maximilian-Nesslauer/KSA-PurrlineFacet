@@ -1,5 +1,5 @@
 name = "Facet by Purrline Rocketworks"
-version = "1.0.5"
+version = "1.1.0"
 description = "Satellite parts for small launchers, by the fictional Purrline Rocketworks: a payload rack with cube satellites, and a kit to build small satellites and probes from a bus, a battery pack, solar wings, RCS pods, antennas, instruments, a dish, a propellant tank and the Alcor kick engine. Many parts come bare, in gold foil or in white cloth."
 assets = [
     "FacetCellsAAssets.xml",
@@ -12,6 +12,7 @@ assets = [
     "FacetCubeAAssets.xml",
     "FacetBusAAssets.xml",
     "FacetWingsAAssets.xml",
+    "FacetWingsTrackAAssets.xml",
     "FacetInstrAAssets.xml",
     "FacetVoyagerAAssets.xml",
     "AlcorEngineAAssets.xml",
@@ -20,6 +21,7 @@ assets = [
     "FacetCubeAGameData.xml",
     "FacetBusAGameData.xml",
     "FacetWingsAGameData.xml",
+    "FacetWingsTrackAGameData.xml",
     "FacetInstrAGameData.xml",
     "FacetVoyagerAGameData.xml",
     "AlcorEngineAGameData.xml",

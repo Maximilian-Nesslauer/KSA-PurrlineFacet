@@ -15,6 +15,7 @@
     </InertMasses>
     <EditorTags Modify="Extend">
       <EditorTag Ref="Structural" />
+      <EditorTag Ref="NoFaceSnapping" />
     </EditorTags>
     <Diameters Modify="Extend">
       <Diameter M="1" />

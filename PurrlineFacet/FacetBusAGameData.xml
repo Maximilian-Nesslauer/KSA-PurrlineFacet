@@ -4,7 +4,7 @@
      it takes the data of its head (the A part). -->
 <Assets>
 
-  <Part Id="FacetBusA_Prefab_BusA" Modify="Patch" DisplayName="Facet Bus">
+  <Part Id="FacetBusA_Prefab_BusA" Modify="Patch" DisplayName="Facet Bus" FaceSnapMode="PhysicsCollider">
     <InertMasses Modify="Extend">
       <HollowCuboidMass>
         <Material Ref="Aluminum.2014" Phase="Solid" />
@@ -22,16 +22,18 @@
     </Diameters>
     <Components Modify="Extend">
       <Control />
-      <Battery HasStatusLight="true">
+      <Battery>
         <MaximumCapacity J="1440000" />
       </Battery>
-      <PowerConsumer LightSwitch="true" LightIsActive="true">
+      <PowerConsumer PowerSwitch="true" HasStatusLight="true">
         <Consumed W="25" />
       </PowerConsumer>
+      <Avionics ToleranceGy="1000" UpsetDoseMSv="900" />
+      <RadiationShield Key="AvionicsBox" HullGPerCm2="1" />
     </Components>
   </Part>
 
-  <Part Id="FacetBusA_Prefab_BatteryA" Modify="Patch" DisplayName="Facet Battery Pack">
+  <Part Id="FacetBusA_Prefab_BatteryA" Modify="Patch" DisplayName="Facet Battery Pack" FaceSnapMode="PhysicsCollider">
     <InertMasses Modify="Extend">
       <HollowCuboidMass>
         <Material Ref="Aluminum.2014" Phase="Solid" />
@@ -44,6 +46,7 @@
     <EditorTags Modify="Extend">
       <EditorTag Ref="Electrical" />
       <EditorTag Ref="Structural" />
+      <EditorTag Ref="NoFaceSnapping" />
     </EditorTags>
     <Diameters Modify="Extend">
       <Diameter M="0.5" />

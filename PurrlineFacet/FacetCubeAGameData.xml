@@ -22,7 +22,7 @@
     </Diameters>
     <Components Modify="Extend">
       <Control />
-      <Battery HasStatusLight="true">
+      <Battery>
         <MaximumCapacity J="144000" />
       </Battery>
       <SolarPanel Key="PanelPlusY">
@@ -49,9 +49,11 @@
           <Rotation Y="1.5708" />
         </Transform>
       </SolarPanel>
-      <PowerConsumer LightSwitch="true" LightIsActive="true">
+      <PowerConsumer PowerSwitch="true" HasStatusLight="true">
         <Consumed W="1.5" />
       </PowerConsumer>
+      <Avionics ToleranceGy="50" UpsetDoseMSv="45" />
+      <RadiationShield Key="AvionicsBox" HullGPerCm2="0.5" />
       <Decoupler Force="5">
         <Connector KeyRef="_connector1Bottom" />
       </Decoupler>
@@ -80,7 +82,7 @@
     </Diameters>
     <Components Modify="Extend">
       <Control />
-      <Battery HasStatusLight="true">
+      <Battery>
         <MaximumCapacity J="288000" />
       </Battery>
       <SolarPanel Key="PanelPlusY">
@@ -107,9 +109,11 @@
           <Rotation Y="1.5708" />
         </Transform>
       </SolarPanel>
-      <PowerConsumer LightSwitch="true" LightIsActive="true">
+      <PowerConsumer PowerSwitch="true" HasStatusLight="true">
         <Consumed W="3" />
       </PowerConsumer>
+      <Avionics ToleranceGy="50" UpsetDoseMSv="45" />
+      <RadiationShield Key="AvionicsBox" HullGPerCm2="0.5" />
       <Decoupler Force="12">
         <Connector KeyRef="_connector1Bottom" />
       </Decoupler>
@@ -138,12 +142,14 @@
     </Diameters>
     <Components Modify="Extend">
       <Control />
-      <Battery HasStatusLight="true">
+      <Battery>
         <MaximumCapacity J="576000" />
       </Battery>
-      <PowerConsumer LightSwitch="true" LightIsActive="true">
+      <PowerConsumer PowerSwitch="true" HasStatusLight="true">
         <Consumed W="6" />
       </PowerConsumer>
+      <Avionics ToleranceGy="50" UpsetDoseMSv="45" />
+      <RadiationShield Key="AvionicsBox" HullGPerCm2="0.5" />
       <Decoupler Force="24">
         <Connector KeyRef="_connector1Bottom" />
       </Decoupler>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parts by Purrline Rocketworks, a fictional maker. Game data of the set FacetWingsTrackA.
+     Patch rows of the generated parts and subparts. A variant member (B or C) has no row;
+     it takes the data of its head (the A part). -->
+<Assets>
+  <KeyframeAnimation Id="FacetWingsTrackA_Prefab_TrackWing2A_Anim" Path="Animations/FacetWingsTrackA_Prefab_TrackWing2A_Anim.glb" />
+
+  <KeyframeAnimation Id="FacetWingsTrackA_Prefab_TrackWing3A_Anim" Path="Animations/FacetWingsTrackA_Prefab_TrackWing3A_Anim.glb" />
+
+  <Part Id="FacetWingsTrackA_Prefab_TrackWing2A" Modify="Patch" DisplayName="Facet Tracking Wing 2">
+    <InertMasses Modify="Extend">
+      <SolidCylinderMass>
+        <Mass Kg="1.5" />
+        <LocationAsmb X="0.024" />
+        <Length M="0.048" />
+        <Radius M="0.048" />
+      </SolidCylinderMass>
+      <SolidCuboidMass>
+        <Mass Kg="6.5" />
+        <LocationAsmb X="0.5388" />
+        <LengthX M="0.9575" />
+        <LengthY M="0.43" />
+        <LengthZ M="0.018" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="WingAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetWingsTrackA_Prefab_TrackWing2A_Anim" />
+        <SolarTracking DegreesPerSecond="5">
+          <Tracked KeyRef="FacetWingsTrackA_Subpart_DriveRotor1" />
+          <ExcludeSubParts>
+            <ExcludeSubPart KeyRef="FacetWingsTrackA_Subpart_DriveHousing1" />
+          </ExcludeSubParts>
+        </SolarTracking>
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+
+  <Part Id="FacetWingsTrackA_Prefab_TrackWing3A" Modify="Patch" DisplayName="Facet Tracking Wing 3">
+    <InertMasses Modify="Extend">
+      <SolidCylinderMass>
+        <Mass Kg="1.5" />
+        <LocationAsmb X="0.024" />
+        <Length M="0.048" />
+        <Radius M="0.048" />
+      </SolidCylinderMass>
+      <SolidCuboidMass>
+        <Mass Kg="9.5" />
+        <LocationAsmb X="0.7303" />
+        <LengthX M="1.3405" />
+        <LengthY M="0.43" />
+        <LengthZ M="0.018" />
+      </SolidCuboidMass>
+    </InertMasses>
+    <EditorTags Modify="Extend">
+      <EditorTag Ref="Electrical" />
+    </EditorTags>
+    <Components Modify="Extend">
+      <KeyframeAnimationModule Key="WingAnimation" ShowDeployRetract="true">
+        <KeyframeAnimation Ref="FacetWingsTrackA_Prefab_TrackWing3A_Anim" />
+        <SolarTracking DegreesPerSecond="5">
+          <Tracked KeyRef="FacetWingsTrackA_Subpart_DriveRotor1" />
+          <ExcludeSubParts>
+            <ExcludeSubPart KeyRef="FacetWingsTrackA_Subpart_DriveHousing1" />
+          </ExcludeSubParts>
+        </SolarTracking>
+      </KeyframeAnimationModule>
+    </Components>
+    <Connectors Modify="Extend">
+      <Connector Key="_connector1Surface" Modify="Patch">
+        <Flags>ToSurface</Flags>
+      </Connector>
+    </Connectors>
+  </Part>
+</Assets>

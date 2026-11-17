@@ -428,6 +428,7 @@
         <MaxAngleY Degrees="3" />
         <MaxAngleZ Degrees="3" />
         <ConstrainToCircle Value="false" />
+        <MaxSlewRate DegreesPerSecond="6" />
       </Gimbal>
     </Gimbals>
   </Part>

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0
+
+- Add Tracking Wing 2 and 3 at 138 W and 207 W, with a single-axis drive at up to 5 degrees per second. Preserve the original wings in flight.
+- Add switchable Bus and Cube avionics with status lights and radiation protection. Give the Eye Imager and Camera Pod their own power switches.
+- Set the Alcor gimbal slew limit to 6 degrees per second. Adjust Bus and Battery Pack attachment surfaces, inline placement and picker angles.
+- Document about 414 kg of propellant in the Voyager Tank and about 11 kg in each RCS Pod at the corrected stock MMH density. Preserve tank volume, part IDs and connector order.
+
 ## 1.0.5
 
 Works with KSA build version 2026.11.16.5901 and needs it. KSA 2026.11.16.5901 moved the minimum throttle and the minimum pulse time of an engine from the combustion chamber to the rocket, so with Facet 1.0.4 the Alcor Kick Engine and the Facet RCS Pod did not load. These values are now in the new place and are the same as before. The game also corrected the density of MMH: the Facet Voyager Tank now holds about 414 kg instead of 300 kg and each RCS Pod about 11 kg instead of 8 kg, so Facet Voyager has about 3,500 m/s instead of about 2,900 m/s. Part Ids, shapes, colliders, masses and saved vehicles are the same as in 1.0.4. This version does not load on older KSA builds; use 1.0.4 there.

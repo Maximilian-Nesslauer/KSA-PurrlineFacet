@@ -8,6 +8,7 @@
   <KeyframeAnimation Id="FacetWingsA_Prefab_Wing3A_Anim" Path="Animations/FacetWingsA_Prefab_Wing3A_Anim.glb" />
 
   <Part Id="FacetWingsA_Prefab_Wing2A" Modify="Patch" DisplayName="Facet Wing 2">
+    <ThumbnailRotation X="1.5708" />
     <InertMasses Modify="Extend">
       <SolidCuboidMass>
         <Mass Kg="7" />
@@ -33,6 +34,7 @@
   </Part>
 
   <Part Id="FacetWingsA_Prefab_Wing3A" Modify="Patch" DisplayName="Facet Wing 3">
+    <ThumbnailRotation X="1.5708" />
     <InertMasses Modify="Extend">
       <SolidCuboidMass>
         <Mass Kg="10" />
