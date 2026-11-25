@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Mark the mod as compatible with KSA 2026.11.25.5949. No functional changes.
+
 ## 1.1.0
 
 - Add Tracking Wing 2 and 3 at 138 W and 207 W, with a single-axis drive at up to 5 degrees per second. Preserve the original wings in flight.
